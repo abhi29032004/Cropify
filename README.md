@@ -1,75 +1,108 @@
-# Cropify- A Farmer Friendly Website
+<img src="templates/Screenshot 2024-04-07 151553.png">
 
-Cropify is a web application built with React that aims to assist farmers in optimizing their crop yield and diagnosing plant diseases. By leveraging machine learning models such as Convolutional Neural Networks (CNN), Naive Bayes, Light Gradient Boosting Machine (Light GBM), and Decision Trees, Cropify offers predictive insights to farmers based on input data, including images of plant leaves.
+
+
+# Cropify
+
+Cropify is a web application designed to empower farmers with intelligent decision-making tools to enhance their farming practices and promote sustainability in the agricultural sector. Leveraging machine learning models, Cropify offers farmers insights and recommendations tailored to their specific needs and conditions.
 
 ## Features
 
-Cropify offers the following key features:
+- **Machine Learning Models:**
+  - Naive Bayes: Utilized for predictive analytics and classification tasks, such as crop disease detection and risk assessment.
+  - Random Forest: Employed for predictive modeling and decision-making processes, aiding in crop yield forecasting and optimal resource allocation.
+  - LightGBM: Utilized for efficient gradient boosting, enabling accurate predictions and insights into soil health and nutrient management.
+  - CNN (Convolutional Neural Network): Applied for image recognition and analysis, assisting in crop pest identification and monitoring.
 
-- *Yield Prediction:* Predicts the potential yield for various crops based on factors such as soil quality, weather conditions, and historical data.
+- **Crop Recommendation:** Utilizing machine learning algorithms, Cropify recommends suitable crops based on factors such as soil type, climate conditions, and historical data.
 
-- *Disease Detection:* Utilizes image recognition techniques powered by CNN to identify diseases affecting plant leaves accurately. Farmers can upload images of plant leaves, and Cropify will diagnose the disease and recommend appropriate treatments.
+- **Yield Prediction:** Predicts crop yields based on various parameters such as weather patterns, soil quality, and agricultural practices, helping farmers plan their harvest and optimize resources.
 
-- *Crop Recommendation:* Recommends the best crop to cultivate on the farmer's land based on soil type, climate, and other environmental factors. This recommendation is generated using machine learning algorithms such as Naive Bayes and Decision Trees.
+- **Fertilizer Recommendation:** Provides personalized recommendations for fertilizer usage based on soil nutrient analysis, crop type, and growth stage, promoting efficient nutrient management and reducing waste.
 
-- *Fertilizer Recommendation:* Suggests the most suitable fertilizer for a particular crop and soil type, enhancing crop productivity and minimizing resource wastage.
+- **Leaf Disease Prediction:** Detects and predicts crop diseases by analyzing images of leaves, enabling early detection and intervention to prevent widespread crop damage.
+
+## Technologies Used
+
+- **Frontend:** Built with React.js, providing a responsive and interactive user interface for seamless navigation and engagement.
+
+- **Backend:** Backend functionalities are supported by Python-based frameworks for machine learning model development, API integrations, and data processing.
+
+- **Machine Learning Libraries:** Utilized popular libraries such as Scikit-learn, TensorFlow, and Keras for developing and deploying machine learning models.
 
 ## Installation
 
 To run Cropify locally, follow these steps:
 
-1. Clone this repository to your local machine.
-   
-   git clone https://github.com/atheek2003/Cropify.git
-   
+1. Clone the repository:
 
-2. Navigate to the project directory.
-   
-   cd Cropify
-   
+```
+    git clone https://github.com/BRArjun/Cropify_ML_WebDev.git
+```
 
-3. Install dependencies using npm or yarn.
-   
-   npm install
-   # or
-   yarn install
-   
+2. Navigate to the project directory:
 
-4. Start the development server.
-   
-   npm start
-  
-   
+```
+    cd Cropify_ML_WebDev
+```
 
-5. Open your web browser and navigate to http://localhost:3000 to access Cropify.
+3. Install dependencies:
 
-## Technologies Used
+```
+    npm install
+```
 
-Cropify is built using the following technologies:
+4. Start the developmental server:
 
-- *React:* Frontend JavaScript library for building user interfaces.
-- *TensorFlow.js:* JavaScript library for training and deploying machine learning models in the browser.
-- *Node.js:* JavaScript runtime environment for executing server-side code.
-- *Express:* Web application framework for Node.js used for building the backend API.
-- *CNN, Naive Bayes, Light GBM, Decision Trees:* Machine learning models used for yield prediction, disease detection, crop recommendation, and fertilizer recommendation.
+```
+    npm start
+```
+
+5. Access Cropify in your web browser at `http://localhost:3000`.
 
 ## Contributing
 
-We welcome contributions from the community to enhance Cropify further. If you'd like to contribute, please follow these guidelines:
-
-1. Fork the repository on GitHub.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with descriptive messages.
-4. Push your changes to your fork.
-5. Submit a pull request to the main repository's develop branch.
+We welcome contributions from the community to enhance Cropify's features, improve its performance, and expand its capabilities. To contribute, please fork the repository, make your changes, and submit a pull request with a detailed description of your modifications.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+Cropify is licensed under the MIT License.
 
-## Acknowledgments
 
-We would like to thank the following individuals and organizations for their contributions to Cropify:
+# Project Organization
+------------
 
-- [B R Arjun](https://github.com/BRArjun)
-- [Hemanth S Banur](https://github.com/arjuuuuunnnnn)
+    ├── README.md        
+    |          
+    ├── data
+    │   ├── processed      
+    │   └── raw            
+    │
+    ├── models   
+    │   ├── crop_yield_model      
+    │   ├── crop_est_model
+    |   ├── fertilizer_rec_model
+    |   └── leaf_disease_detect_model
+    │
+    ├── research          
+    │
+    ├── ML           
+    │   ├── crop_yield        
+    │   ├── crop_est
+    |   ├── fertilizer_rec
+    |   └── leaf_disease_detect
+    |
+    ├── requirements.txt   
+    │
+    ├── src                
+    │   ├── Components                
+    │   │
+    │   ├── App.js           
+    │   │    
+    │   ├── Index.js       
+    │
+    ├── server.py
+    |
+    ├── json_files
+    |
+    └── data2.csv
