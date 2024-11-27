@@ -1,4 +1,4 @@
-<img src="templates/Screenshot 2024-04-07 151553.png">
+<img src="Screenshot 2024-04-07 151553.png">
 
 
 
